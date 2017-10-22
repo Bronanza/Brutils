@@ -1,6 +1,6 @@
 <?php
 
-namespace Bronanza\Utils\Currency;
+namespace Bronanza\Utils\Number;
 
 
 class Formatter {
