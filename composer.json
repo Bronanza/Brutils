@@ -9,7 +9,9 @@
             "email": "sendyhalim93@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "illuminate/support": "^5.4"
+    },
     "require-dev": {
         "peridot-php/peridot": "^1.19",
         "peridot-php/leo": "^1.6"
