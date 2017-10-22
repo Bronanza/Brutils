@@ -6,10 +6,12 @@ use Bronanza\Utils\Number\Formatter as NumberFormatter;
 
 
 class Formatter {
+    private $currency;
     private $numberFormatter;
 
-    public function __construct(NumberFormatter $numberFormatter) {
+    public function __construct($currency, NumberFormatter $numberFormatter) {
         $this->numberFormatter = $numberFormatter;
+        $this->currency = $currency;
     }
 
     /**
@@ -19,10 +21,10 @@ class Formatter {
      * @param int|double $number
      * @return string
      */
-    public function format($number, $currency = 'Rp')
+    public function format($number)
     {
         $formattedNumber = $this->numberFormatter->format($number);
 
-        return "{$symbol} {$formattedNumber}";
+        return "{$this->currency} {$formattedNumber}";
     }
 }
