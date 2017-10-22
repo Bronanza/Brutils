@@ -1,0 +1,16 @@
+{
+    "name": "bronanza/utils",
+    "description": "Common utilities",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sendy Halim",
+            "email": "sendyhalim93@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "peridot-php/peridot": "^1.19"
+    }
+}

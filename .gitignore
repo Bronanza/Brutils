@@ -1,0 +1,5 @@
+# Ignored directories
+vendor/
+
+# Ignored files
+*.log
