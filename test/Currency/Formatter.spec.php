@@ -15,7 +15,7 @@ describe('Currency/Formatter', function () {
         context('when using default config', function () {
             it('format currency', function () {
                 $formatted = $this->formatter->format(10000);
-                expect($formatted)->to->equal('Rp 10.000');
+                expect($formatted)->to->equal('Rp10.000');
             });
         });
     });

@@ -25,6 +25,6 @@ class Formatter {
     {
         $formattedNumber = $this->numberFormatter->format($number);
 
-        return "{$this->currency} {$formattedNumber}";
+        return "{$this->currency}{$formattedNumber}";
     }
 }
