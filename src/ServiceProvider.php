@@ -35,7 +35,7 @@ class ServiceProvider extends ServiceProvider
     }
 
     /**
-     * Register the HTML builder instance.
+     * Register number formatter.
      *
      * @return void
      */
@@ -51,7 +51,7 @@ class ServiceProvider extends ServiceProvider
     }
 
     /**
-     * Register the form builder instance.
+     * Register currency formatter.
      *
      * @return void
      */
