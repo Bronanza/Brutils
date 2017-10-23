@@ -10,7 +10,7 @@ Add the following to `composer.json`. Then run `composer update`
 ```
 
 
-### **[Optional]
+### Optional
 For laravel support, open `config/app.php` and register service provider to the `providers` array
 ```
 Bronanza\Brutils\ServiceProvider::class
@@ -41,6 +41,7 @@ $formatter->format(10000) === '$10.000';
 NumberFormatter::format(10000) === '10.000';
 CurrencyFormatter::format(10000) === '$10.000';
 ```
+
 
 ## License
 MIT
