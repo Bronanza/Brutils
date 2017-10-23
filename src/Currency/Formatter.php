@@ -1,15 +1,15 @@
 <?php
 
-namespace Bronanza\Utils\Currency;
+namespace Bronanza\Brutils\Currency;
 
-use Bronanza\Utils\Number\Formatter as NumberFormatter;
+use Bronanza\Brutils\Number\Formatter as NumberFormatter;
 
 
 class Formatter {
     private $currency;
     private $numberFormatter;
 
-    public function __construct($currency, NumberFormatter $numberFormatter) {
+    public function __construct(NumberFormatter $numberFormatter, $currency) {
         $this->numberFormatter = $numberFormatter;
         $this->currency = $currency;
     }

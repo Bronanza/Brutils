@@ -1,12 +1,20 @@
 <?php
 
-namespace Bronanza\Utils\Number;
+namespace Bronanza\Brutils\Number;
 
 
 class Formatter {
-    private $thousandSeparator = '.';
-    private $decimalSeparator = ',';
-    private $precision = 0;
+    private $thousandSeparator;
+    private $decimalSeparator;
+    private $precision;
+
+    public function __construct($precision, $decimalSeparator, $thousandSeparator)
+    {
+        $this->precision = $precision;
+        $this->decimalSeparator = $decimalSeparator;
+        $this->thousandSeparator = $thousandSeparator;
+
+    }
 
     /**
      * Format the given number with proper separator.

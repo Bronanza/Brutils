@@ -18,7 +18,7 @@
     },
     "autoload": {
       "psr-4": {
-        "Bronanza\\Utils\\": "src/"
+        "Bronanza\\Brutils\\": "src/"
       }
     }
 }

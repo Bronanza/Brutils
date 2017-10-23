@@ -1,11 +1,11 @@
 <?php
 
-use Bronanza\Utils\Number\Formatter;
+use Bronanza\Brutils\Number\Formatter;
 
 describe('Number/Formatter', function () {
     describe('.format', function () {
         beforeEach(function () {
-            $this->formatter = new Formatter();
+            $this->formatter = new Formatter(0, ',', '.');
         });
 
         context('when using default config', function () {

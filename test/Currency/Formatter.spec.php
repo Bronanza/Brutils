@@ -1,12 +1,15 @@
 <?php
 
-use Bronanza\Utils\Currency\Formatter;
-use Bronanza\Utils\Number\Formatter as NumberFormatter;
+use Bronanza\Brutils\Currency\Formatter;
+use Bronanza\Brutils\Number\Formatter as NumberFormatter;
 
 describe('Currency/Formatter', function () {
     describe('.format', function () {
         beforeEach(function () {
-            $this->formatter = new Formatter('Rp', new NumberFormatter());
+            $this->formatter = new Formatter(
+                new NumberFormatter(0, ',', '.'),
+                'Rp'
+            );
         });
 
         context('when using default config', function () {
