@@ -1,6 +1,6 @@
 {
-    "name": "bronanza/utils",
-    "description": "Common utilities",
+    "name": "bronanza/brutils",
+    "description": "Common php utilities",
     "type": "library",
     "license": "MIT",
     "authors": [
